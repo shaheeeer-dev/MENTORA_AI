@@ -1,0 +1,45 @@
+{
+  "what is your name": "My name is MindMesh AI Assistant.",
+
+  "who created you": "I was created by Muhammad Shaheer, a Software Engineering student at COMSATS.",
+
+  "what is ai": "AI (Artificial Intelligence) is the simulation of human intelligence in machines that are programmed to think, learn, and make decisions.",
+  
+  "what is machine learning": "Machine Learning is a branch of AI that allows systems to learn from data and improve their performance without being explicitly programmed.",
+  
+  "what is deep learning": "Deep Learning is a subset of machine learning that uses neural networks with many layers to analyze complex data like images and speech.",
+  
+  "what is python": "Python is a simple and powerful programming language used to build websites, AI systems, data analysis tools, and automation scripts. It is popular because its syntax is easy to read and learn.",
+
+  "what is java": "Java is a widely used object-oriented programming language known for its 'write once, run anywhere' feature. It runs on the Java Virtual Machine (JVM), making it platform independent.",
+
+  "what is oop": "Object-Oriented Programming (OOP) is a way of writing code using objects and classes to represent real-world things. It helps make programs more organized, reusable, and easier to manage.",
+  
+  "what is function": "A function is a reusable block of code that performs a specific task in programming.",
+  
+  "what is array": "An array is a data structure that stores multiple values of the same type in a single variable.",
+  
+  "what is stack": "A stack is a linear data structure that follows LIFO (Last In First Out) principle.",
+  
+  "what is queue": "A queue is a linear data structure that follows FIFO (First In First Out) principle.",
+  
+  "what is recursion": "Recursion is a technique where a function calls itself to solve smaller instances of a problem.",
+  
+  "what is database": "A database is a structured system for storing and organizing data so it can be easily accessed, updated, and managed when needed.",
+  
+  "what is sql": "SQL (Structured Query Language) is used to communicate with and manage relational databases.",
+  
+  "what is http": "HTTP (HyperText Transfer Protocol) is the foundation of data communication on the web.",
+  
+  "what is api": "An API (Application Programming Interface) acts like a messenger between two software systems, allowing them to communicate and share data without knowing each other's internal code.",
+  
+  "what is git": "Git is a version control system used to track changes in code during software development.",
+  
+  "what is github": "GitHub is a platform that hosts Git repositories and helps developers collaborate on projects.",
+  
+  "what is compiler": "A compiler is a program that converts source code into machine code.",
+  
+  "what is interpreter": "An interpreter executes code line by line instead of compiling it all at once.",
+  
+  "what is os": "An Operating System is system software that manages hardware and software resources of a computer."
+}
