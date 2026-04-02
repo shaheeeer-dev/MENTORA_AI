@@ -1,0 +1,9 @@
+streamlit
+transformers
+torch
+huggingface-hub
+requests
+beautifulsoup4
+lxml
+python-dotenv
+gtts
