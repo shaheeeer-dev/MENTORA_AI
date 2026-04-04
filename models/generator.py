@@ -17,16 +17,16 @@ def ask_ai(prompt):
     }
 
     data = {
-        "model": "deepseek-chat",
+        "model": "llama-3.1-8b-instant",
         "messages": [
             {"role": "user", "content": prompt}
         ]
     }
 
     response = requests.post(url, headers=headers, json=data)
-
     result = response.json()
 
-    print(result)
-
-    return result["choices"][0]["message"]["content"]
+    if "choices" in result:
+        return result["choices"][0]["message"]["content"]
+    else:
+        return f"Error: {result}"
