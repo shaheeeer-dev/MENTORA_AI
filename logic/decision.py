@@ -1,4 +1,6 @@
 import json
+from models.generator import ask_ai
+from scraper.wiki_scraper import get_wiki_summary
 
 with open('data/dictionary.json', 'r') as t:
     dictionary = json.load(t)
@@ -10,8 +12,6 @@ def normalize(text):
         "define" : "what is",
         "explain" : "what is",
         "describe" : "what is",
-        "tell me about" : "what is",
-        "give me info about": "what is"
     }
 
     for i, j in replacements.items():
@@ -25,4 +25,8 @@ def get_response(user_input):
     if user_input in dictionary:
         return dictionary[user_input]
     
-    return "I don't know yet."
+    wiki_result = get_wiki_summary(user_input)
+    if wiki_result:
+        return wiki_result
+    
+    return ask_ai(user_input)
