@@ -5,17 +5,31 @@ from dotenv import load_dotenv
 load_dotenv()
 
 BASE_URL = os.getenv("WIKI_API")
-title = "Python programming language"
-
-url = f"{BASE_URL}/page/summary/{title}"
 headers = {
     "User-Agent": os.getenv("USER_AGENT")
 }
 
-response = requests.get(url, headers=headers)
+def get_wiki_summary(title):
+    title = title.replace(" ", "_")
+    url = f"{BASE_URL}/page/summary/{title}"
 
-print(response.status_code)
-data = response.json()
+    try:
+        response = requests.get(url, headers=headers)
 
-print(data["title"])
-print(data["extract"])
+        if response.status_code != 200:
+            return None
+        
+        data = response.json()
+
+        extract =  data.get("extract", "")
+
+        if "may refer to" in extract.lower():
+            return None
+
+        if len(extract) < 30:
+            return None
+
+        return extract
+    
+    except:
+        return None
