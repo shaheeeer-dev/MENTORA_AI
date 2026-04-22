@@ -1,8 +1,10 @@
 import streamlit as st
 from datetime import datetime
+import os
 
 from logic.decision import get_response
 from utils.memory import Memory, load_logs
+from utils.tts import speak
 
 # initial memory
 memory = Memory()
@@ -82,6 +84,7 @@ if active_week == current_week:
 
         with st.chat_message("assistant"):
             st.write(response)
+            st.session_state.last_response = response
 
         memory.add_message(active_week, "user", user_input)
         memory.add_message(active_week, "assistant", response)
@@ -89,3 +92,12 @@ if active_week == current_week:
 else:
     st.info("You can only chat in the current week.")
 
+if "last_response" in st.session_state:
+
+    if st.button("🔊"):
+
+        audio_file = speak(st.session_state.last_response)
+
+        st.audio(audio_file)
+
+        os.remove(audio_file)
