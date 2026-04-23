@@ -3,10 +3,10 @@
 ![AI](https://img.shields.io/badge/AI-Study_Assistant-purple.svg) <br>
 ![Status](https://img.shields.io/badge/Status-Active-success.svg)
 
-## 🚀 Overview
+## Overview
 **Mentora** is an AI-powered study assistant that helps students learn faster by combining dictionary lookup, web search, AI-generated explanations and text-to-speech output. It is designed to simplify learning and provide quick, clear, and interactive responses.
 
-## 🌐 Features
+## Features
 - Local dictionary-based definitions (JSON knowledge base)
 
 - Web search / scraping for real-time information
@@ -21,7 +21,7 @@
 
 - Interactive chat-based interface (Streamlit)
 
-## ⚙️ How It Works
+## How It Works
 1. User enters a question in the chat UI  
 
 2. `decision.py` analyzes and classifies the query  
@@ -40,7 +40,7 @@
 
 6. User receives both **text + audio output**
 
-## 🎯 Goal
+## Goal
 To build a smart, lightweight AI study assistant that combines multiple knowledge sources with voice interaction for better learning experience.
 
 ## Project Structure
