@@ -23,7 +23,7 @@ def format_label(date_str):
     return dt.strftime("%a %d/%m")
 
 #sidebar
-st.sidebar.title("Chat History")
+st.sidebar.title("MENTORA")
 
 logs_data = load_logs()
 weeks = list(logs_data.keys())
@@ -54,6 +54,8 @@ else:
 st.sidebar.info("Only current day is editable.")
 
 #chat
+with st.chat_message(name="ai"):
+    st.write("Hello! How may I assist you.")
 logs_data = load_logs()
 session_messages = memory.get_messages(active_week)
 old_messages = logs_data.get(active_week, [])
