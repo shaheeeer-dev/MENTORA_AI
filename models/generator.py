@@ -1,11 +1,10 @@
-import os
 import requests
 from dotenv import load_dotenv
+import streamlit as st
 
 load_dotenv()
-
-API_KEY = os.getenv("API_KEY")
-BASE_URL = os.getenv("BASE_URL")
+BASE_URL = st.secrets["BASE_URL"]
+API_KEY = st.secrets["API_KEY"]
 
 
 def ask_ai(prompt):

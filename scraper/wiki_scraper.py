@@ -1,12 +1,12 @@
-import os
 import requests
 from dotenv import load_dotenv
+import streamlit as st
 
 load_dotenv()
 
-BASE_URL = os.getenv("WIKI_API")
+BASE_URL = st.getenv["WIKI_API"]
 headers = {
-    "User-Agent": os.getenv("USER_AGENT")
+    "User-Agent": st.getenv["USER_AGENT"]
 }
 
 def get_wiki_summary(title):
