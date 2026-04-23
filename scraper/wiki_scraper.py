@@ -4,9 +4,9 @@ import streamlit as st
 
 load_dotenv()
 
-BASE_URL = st.getenv["WIKI_API"]
+BASE_URL = st.secrets["WIKI_API"]
 headers = {
-    "User-Agent": st.getenv["USER_AGENT"]
+    "User-Agent": st.secrets["USER_AGENT"]
 }
 
 def get_wiki_summary(title):
