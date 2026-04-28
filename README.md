@@ -7,7 +7,8 @@
 **Mentora** is an AI-powered study assistant that helps students learn faster by combining dictionary lookup, web search, AI-generated explanations and text-to-speech output. It is designed to simplify learning and provide quick, clear, and interactive responses.
 
 ## Architecture Diagram 
-<img width="904" height="428" alt="Screenshot 2026-04-24 at 1 04 36 AM" src="https://github.com/user-attachments/assets/3e0b82bd-283c-480b-ab5e-9dffd788ae7c" />
+<img width="837" height="507" alt="Screenshot 2026-04-29 at 2 13 17 AM" src="https://github.com/user-attachments/assets/fa5bfdf2-1d38-46c7-b173-91f4bb524849" />
+
 
 ## Features
 - Local dictionary-based definitions (JSON knowledge base)
